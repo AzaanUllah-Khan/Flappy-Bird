@@ -48,7 +48,6 @@ h1 {
     color: #fff;
     margin-top: 10px;
 }
-
 #startButton {
     padding: 10px 20px;
     font-size: 16px;
@@ -58,11 +57,9 @@ h1 {
     border-radius: 5px;
     color: #70c5ce;
 }
-
 #startButton:hover {
     background-color: #ccc;
 }
-
 #endGameMessage {
     position: absolute;
     top: 50%;
@@ -73,11 +70,9 @@ h1 {
     border-radius: 5px;
     display: none;
 }
-
 #endGameMessage.show {
     display: block;
 }
-
 #newGameButton {
     margin-top: 20px;
     padding: 10px 20px;
