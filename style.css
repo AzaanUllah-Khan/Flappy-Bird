@@ -34,16 +34,13 @@ h1 {
     width: 52px;
     background-color: #0f0;
 }
-
 .pipe-top {
     height: 40%;
 }
-
 .pipe-bottom {
     height: 60%;
     top: 40%;
 }
-
 .score-board {
     color: #fff;
     margin-top: 10px;
