@@ -46,7 +46,7 @@ const gameArea = document.getElementById('gameArea');
                 pipe.top.style.left = `${pipe.x}px`;
                 pipe.bottom.style.left = `${pipe.x}px`;
                 pipe.x -= 2;
-
+                    
                 if (pipe.x + pipe.width < 0) {
                     pipe.top.remove();
                     pipe.bottom.remove();
