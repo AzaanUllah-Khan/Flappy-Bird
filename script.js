@@ -28,8 +28,8 @@ const gameArea = document.getElementById('gameArea');
             bird.style.top = `${birdY}px`;
 
             gameInterval = setInterval(updateGame, 20);
-            gravityInterval = setInterval(applyGravity, 23);
-            pipeInterval = setInterval(createPipe, 2500);
+            gravityInterval = setInterval(applyGravity, 20);
+            pipeInterval = setInterval(createPipe, 2000);
 
             document.addEventListener('keydown', handleKeyPress);
         }
