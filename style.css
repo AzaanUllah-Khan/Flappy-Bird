@@ -27,7 +27,7 @@ h1 {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: yellow;
+    background-color: #cce2ff;
     border-radius: 50%;
     top: 40%;
     left: 20%;
@@ -36,7 +36,7 @@ h1 {
 .pipe {
     position: absolute;
     width: 52px;
-    background-color: #0f0;
+    background-color: #0271ff;
 }
 
 .pipe-top {
