@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird Game</title>
-    <link rel="icon href="https://e7.pngegg.com/pngimages/843/801/png-clipart-flappy-bird-app-store-mobile-app-flappy-hd-bird-2018-ios-iphone-thumbnail.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="wrap" id="wrap"></div>
 <!-- game area -->
     <div id="gameArea">
         <div id="bird" class="bird"></div>
@@ -18,7 +18,7 @@
         <button id="startButton">Start Game</button>
     </div>
 <!--credits -->
-    <div style="text-align: center; margin-top: 30px; color: #0271ff;">
+    <div style="text-align: center; margin-top: 20px; color: #0271ff;">
         <p>Made By <strong>Azaan Ullah Khan</strong> with 💙</p>
     </div>
 <!--     end popup -->
@@ -27,9 +27,8 @@
         <p>Your final score is <span id="finalScore">0</span></p>
         <button id="newGameButton">Start New Game</button>
     </div>
-    <audio id="flapSound" src="https://www.soundjay.com/button/sounds/button-29.mp3" preload="auto"></audio>
-    <audio id="hitSound" src="https://www.soundjay.com/button/sounds/button-10.mp3" preload="auto"></audio>
-    <audio id="pointSound" src="https://www.soundjay.com/button/sounds/button-4.mp3" preload="auto"></audio>
+    <audio id="hitSound" src="./game-over-arcade-6435.mp3" preload="auto"></audio>
+    <audio id="pointSound" src="./point-smooth-beep-230573.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
 </html>

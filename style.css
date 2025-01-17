@@ -1,31 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
-
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvatica, sans-serif;
+}
+body {
     text-align: center;
     background-color: #cce2ff;
     margin: 0;
+    padding: 0;
     overflow: hidden;
 }
-
+.wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005b;
+    backdrop-filter: blur(3px);
+    z-index: 300;
+    display: none;
+}
 #gameArea {
     position: relative;
     width: 90vw;
     height: 70vh;
-    background-color: #cce2ff;
+    background-color: #c4ddff;
     overflow: hidden;
     margin: 0 auto;
     border: 2px solid #0271ff;
     border-radius: 10px;
-    margin-top: 10px;
-    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089918d8-99ff-45de-a084-3fe85d0e3fcc/dg34rsu-29a3d144-dc3f-473e-a949-f73a4ba1ef7c.png/v1/fill/w_608,h_457,q_80,strp/flappy_bird_backdrop_by_lenaxux_dg34rsu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDU3IiwicGF0aCI6IlwvZlwvMDg5OTE4ZDgtOTlmZi00NWRlLWEwODQtM2ZlODVkMGUzZmNjXC9kZzM0cnN1LTI5YTNkMTQ0LWRjM2YtNDczZS1hOTQ5LWY3M2E0YmExZWY3Yy5wbmciLCJ3aWR0aCI6Ijw9NjA4In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0._FI7nnUO3ZCIz23z4_juaIbbiEa_LQd1lX6MK-0iUEE");
+    margin-top: 20px;
+    background-image: url("./sr2e4fa549d43aws3.png");
+    background-position: bottom;
+    background-size: 400px;
+    background-repeat: repeat-x;
 }
 
 .bird {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #cce2ff;
+    background-color: #67e667;
+    border: 2px solid #54d154;
     border-radius: 50%;
     top: 40%;
     left: 20%;
@@ -34,7 +53,8 @@ body {
 .pipe {
     position: absolute;
     width: 52px;
-    background-color: #0271ff;
+    background-color: #e6d593;
+    border: 2px solid #ddcc86;
 }
 
 .pipe-top {
@@ -52,10 +72,10 @@ body {
 }
 
 .score-board h3 {
-    margin: 5px;
+    margin: 10px;
 }
 .score-board span {
-    font-weigt: 600;
+    font-weight: 600;
 }
 
 #startButton {
@@ -69,7 +89,7 @@ body {
 }
 
 #startButton:hover {
-    background-color: #cce2ff;
+    background-color: #2382ff;
 }
 
 #endGameMessage {
@@ -81,6 +101,15 @@ body {
     padding: 20px;
     border-radius: 5px;
     display: none;
+    width: 300px;
+    z-index: 500;
+}
+h2{
+    font-size: 20px;
+    margin: 0;
+}
+p{
+    margin: 5px;
 }
 
 #endGameMessage.show {
@@ -99,5 +128,5 @@ body {
 }
 
 #newGameButton:hover {
-    background-color: #cce2ff;
+    background-color: #2382ff;
 }
