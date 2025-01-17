@@ -50,21 +50,10 @@ h1 {
 
 .score-board {
     color: #000;
-    margin-top: 10px;
-}
-
-#startButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0271ff;
-    border: none;
-    border-radius: 5px;
-    color: white;
-}
-
-#startButton:hover {
-    background-color: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
 }
 
 #endGameMessage {
@@ -80,6 +69,15 @@ h1 {
 
 #endGameMessage.show {
     display: block;
+}
+
+#madeBy {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
 }
 
 #newGameButton {
