@@ -8,11 +8,6 @@ body {
     overflow: hidden;
 }
 
-h1 {
-    margin-top: 20px;
-    color: #000;
-}
-
 #gameArea {
     position: relative;
     width: 90vw;
