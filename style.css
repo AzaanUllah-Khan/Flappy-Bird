@@ -57,6 +57,7 @@ h1 {
     left: 10px;
     font-size: 24px;
     font-weight: bold;
+    z-index: 1000;
 }
 
 #endGameMessage {
