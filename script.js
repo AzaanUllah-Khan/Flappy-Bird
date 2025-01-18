@@ -18,12 +18,12 @@ function startGame() {
     if (isGameRunning) return;
     isGameRunning = true;
     score = 0;
-    scoreBoard.textContent = score;
+    scoreBoard.textContent = score;  // Ensure the score is visible
     birdY = gameArea.offsetHeight / 2;
     birdVelocity = 0;
     pipes = [];
-    gameArea.innerHTML = '';
-    gameArea.appendChild(bird);
+    gameArea.innerHTML = ''; // Clear the game area
+    gameArea.appendChild(bird); // Reattach bird
     bird.style.top = `${birdY}px`;
 
     gameInterval = setInterval(updateGame, 20);
@@ -69,7 +69,7 @@ function applyGravity() {
 }
 
 function handleKeyPress(event) {
-    if (event.key === 'Enter' || event.type === 'touchstart') {
+    if (event.key === 'ArrowUp' || event.type === 'touchstart') {  // Change to 'ArrowUp' key
         birdVelocity = -5;
         flapSound.play();
     }
@@ -120,9 +120,7 @@ function startNewGame() {
 }
 
 document.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        startGame();
-    }
+    // Disable starting the game by pressing 'Enter' when game is over
 });
 
 newGameButton.addEventListener('click', startNewGame);
