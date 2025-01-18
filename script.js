@@ -25,7 +25,7 @@ const gameArea = document.getElementById('gameArea');
             pipes = [];
             gameArea.innerHTML = '';
             gameArea.appendChild(bird);
-            bird.style.top = ${birdY}px;
+            bird.style.top = `${birdY}px`;
 
             gameInterval = setInterval(updateGame, 20);
             gravityInterval = setInterval(applyGravity, 20);
@@ -36,7 +36,7 @@ const gameArea = document.getElementById('gameArea');
 
         function updateGame() {
             birdY += birdVelocity;
-            bird.style.top = ${birdY}px;
+            bird.style.top = `${birdY}px`;
 
             if (birdY >= gameArea.offsetHeight || birdY <= 0) {
                 endGame();
@@ -84,16 +84,16 @@ const gameArea = document.getElementById('gameArea');
 
             const pipeTop = document.createElement('div');
             pipeTop.classList.add('pipe', 'pipe-top');
-            pipeTop.style.height = ${pipeTopHeight}px;
-            pipeTop.style.width = ${pipeWidth}px;
-            pipeTop.style.left = ${gameArea.offsetWidth}px;
+            pipeTop.style.height = `${pipeTopHeight}px`;
+            pipeTop.style.width = `${pipeWidth}px`;
+            pipeTop.style.left = `${gameArea.offsetWidth}px`;
 
             const pipeBottom = document.createElement('div');
             pipeBottom.classList.add('pipe', 'pipe-bottom');
-            pipeBottom.style.height = ${gameArea.offsetHeight - pipeTopHeight}px;
-            pipeBottom.style.width = ${pipeWidth}px;
-            pipeBottom.style.left = ${gameArea.offsetWidth}px;
-            pipeBottom.style.top = ${pipeTopHeight + pipeGap}px;
+            pipeBottom.style.height = `${gameArea.offsetHeight - pipeTopHeight}px`;
+            pipeBottom.style.width = `${pipeWidth}px`;
+            pipeBottom.style.left = `${gameArea.offsetWidth}px`;
+            pipeBottom.style.top = `${pipeTopHeight + pipeGap}px`;
 
             gameArea.appendChild(pipeTop);
             gameArea.appendChild(pipeBottom);
