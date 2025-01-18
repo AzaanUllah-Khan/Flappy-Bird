@@ -69,7 +69,7 @@ body {
 }
 
 #startButton:hover {
-    background-color: #ccc;
+    background-color: #cce2ff;
 }
 
 #endGameMessage {
@@ -99,5 +99,5 @@ body {
 }
 
 #newGameButton:hover {
-    background-color: #ccc;
+    background-color: #cce2ff;
 }
