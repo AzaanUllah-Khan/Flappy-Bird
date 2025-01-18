@@ -43,8 +43,8 @@ const gameArea = document.getElementById('gameArea');
             }
 
             pipes.forEach(pipe => {
-                pipe.top.style.left = ${pipe.x}px;
-                pipe.bottom.style.left = ${pipe.x}px;
+                pipe.top.style.left = `${pipe.x}px`;
+                pipe.bottom.style.left = `${pipe.x}px`;
                 pipe.x -= 2;
                     
                 if (pipe.x + pipe.width < 0) {
