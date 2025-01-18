@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird Game</title>
-    <link rel="icon" href="https://e7.pngegg.com/pngimages/843/801/png-clipart-flappy-bird-app-store-mobile-app-flappy-hd-bird-2018-ios-iphone-thumbnail.png">
+    <link rel="icon href="https://e7.pngegg.com/pngimages/843/801/png-clipart-flappy-bird-app-store-mobile-app-flappy-hd-bird-2018-ios-iphone-thumbnail.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Flappy Bird Game</h1>
-    <!-- Game area -->
+<!-- game area -->
     <div id="gameArea">
-    <div class="score-board">
-        Score: <span id="score">0</span>
-    </div>
         <div id="bird" class="bird"></div>
     </div>
-    <!-- Score board -->
-    <!-- End popup -->
+<!--     score board -->
+    <div class="score-board">
+        <h2>Score: <span id="score">0</span></h2>
+        <button id="startButton">Start Game</button>
+    </div>
+<!--     end popup -->
     <div id="endGameMessage">
         <h2>Game Over!</h2>
         <p>Your final score is <span id="finalScore">0</span></p>
         <button id="newGameButton">Start New Game</button>
-    </div>
-    <!-- Made by footer -->
-    <div id="madeBy">
-        Made by AzaanUllah Khan with 💙
     </div>
     <audio id="flapSound" src="https://www.soundjay.com/button/sounds/button-29.mp3" preload="auto"></audio>
     <audio id="hitSound" src="https://www.soundjay.com/button/sounds/button-10.mp3" preload="auto"></audio>
