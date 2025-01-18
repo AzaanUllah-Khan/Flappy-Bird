@@ -69,7 +69,7 @@ function applyGravity() {
 }
 
 function handleKeyPress(event) {
-    if (event.key === 'ArrowUp' || event.type === 'touchstart') {  // Change to 'ArrowUp' key
+    if (event.key === 'ArrowUp' || event.type === 'touchstart') {  // Bird jumps on 'Up Arrow' key or touch
         birdVelocity = -5;
         flapSound.play();
     }
@@ -120,7 +120,9 @@ function startNewGame() {
 }
 
 document.addEventListener('keydown', (event) => {
-    // Disable starting the game by pressing 'Enter' when game is over
+    if (event.key === 'Enter' && !isGameRunning) {
+        startGame(); // Start the game when 'Enter' is pressed and the game is not running
+    }
 });
 
 newGameButton.addEventListener('click', startNewGame);
