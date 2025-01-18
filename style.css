@@ -48,10 +48,12 @@ body {
 
 .score-board {
     color: #000;
-    margin-top: 7px;
     font-weight: 400;
 }
 
+.score-board h3 {
+    margin: 5px;
+}
 .score-board span {
     font-weigt: 600;
 }
