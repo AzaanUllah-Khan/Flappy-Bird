@@ -51,11 +51,12 @@ h1 {
 }
 
 .score-board {
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 10px;
     left: 10px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 #endGameMessage {
